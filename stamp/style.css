@@ -1,0 +1,62 @@
+h1{
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1.05em;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.1em;
+  background: #C21313;
+  color:white;
+}
+
+.bd {
+  width: 100vw;
+  height: 0vh;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.con {
+  width: 260px;
+  height: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  padding: 25px 15px;
+  background: white;
+  font-size: 3rem;
+  font-family: "UnifrakturMaguntia", cursive;
+  color: brown;
+  opacity: 46%;
+  border: 1.2px solid brown;
+  border-radius: 6px;
+}
+
+
+@media screen and (max-height: 257px) {
+  .bd {
+    background: white;
+    width: 100vw;
+    height: 80vh;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+
+.con {
+  background: white;
+}  
+
+.item {
+  color:black;
+  border: 1px solid white;
+  opacity: 100%;
+}
+
+}
