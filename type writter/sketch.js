@@ -19,5 +19,5 @@ function setup() {
   clear();
 
   // Draw the image.
-  image(img, 0, 0, 1800, 900);
+  image(img, 0, 0, 1800, windowHeight);
 }
