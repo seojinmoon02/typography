@@ -1,8 +1,13 @@
-html, body {
+body {
   margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fffdf8;
+  font-family: "Courier New", monospace;
 }
-
 canvas {
-  display: block;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
 }
