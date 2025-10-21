@@ -1,4 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1{
+  margin: 0;
   font-family: sans-serif;
   font-weight: 400;
   font-size: 1.05em;
@@ -7,6 +13,7 @@ h1{
   letter-spacing: 0.1em;
   background: #C21313;
   color:white;
+  padding: 10px;
 }
 
 .bd {
@@ -36,7 +43,7 @@ h1{
   color: brown;
   opacity: 46%;
   border: 1.2px solid brown;
-  border-radius: 6px;
+  border-radius: 3px;
 }
 
 
@@ -59,4 +66,14 @@ h1{
   opacity: 100%;
 }
 
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }

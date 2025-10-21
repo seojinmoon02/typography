@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 불릿포인트 제거 */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 링크 스타일 */
+a {
+  color: #f4f2ef;             /* 검은색 글자 */
+  text-decoration: none;  /* 밑줄 제거 */
+}
+
+/* 링크 hover 시 (마우스 올릴 때) 살짝 강조하고 싶다면 옵션으로 추가 가능 */
+a:hover {
+  color: rgb(42, 33, 33);       /* 살짝 강조 색 */
+}
+
+
+h1{
+  margin: 0;
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.05em;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.01em;
+  background: #C21313;
+  color:white;
+}
+
+Li{
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 12em;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  font-family: sans-serif;
+  padding-left: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "hand stamp"
+    "type stamp"
+    "content content";
+  grid-template-columns: 1.83fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 2px;
+  background-color: #211d1d;
+}
+
+.container div {
+  color:#000;
+}
+
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.container div.stamp {
+  grid-area: stamp;
+  background: #ffffff;
+}
+
+.container div.hand {
+  grid-area: hand;
+}
+.container div.type{
+  grid-area: type;
+}
+
+.container div.content{
+  grid-area: content;
+  background: #ffffff;
+}
+
+.stamp2 {
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 345px;
+}
+
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
