@@ -10,16 +10,75 @@ ul {
   margin: 0;
 }
 
-/* 링크 스타일 */
+/* 글씨 스타일 */
 a {
   color: #f4f2ef;             /* 검은색 글자 */
   text-decoration: none;  /* 밑줄 제거 */
 }
 
-/* 링크 hover 시 (마우스 올릴 때) 살짝 강조하고 싶다면 옵션으로 추가 가능 */
+/* 글씨 hover 시 (마우스 올릴 때) 살짝 강조하고 싶다면 옵션으로 추가 가능 */
 a:hover {
   color: rgb(42, 33, 33);       /* 살짝 강조 색 */
 }
+
+
+/* HOME */
+
+.home-button {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: none;       /* 배경색 없음 */
+  border: none;
+  cursor: pointer;
+}
+
+.plus-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.plus-icon::before,
+.plus-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform-origin: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.plus-icon::before {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.plus-icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* hover 시 X로 회전 */
+.home-button:hover .plus-icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #000;
+}
+
+.home-button:hover .plus-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #000;
+}
+
+
+
 
 
 h1{
@@ -36,8 +95,8 @@ h1{
 }
 
 Li{
-  font-family: sans-serif;
-  font-weight: 300;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 100;
   font-size: 12em;
   text-align: left;
   padding-left: 20px;

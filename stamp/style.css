@@ -3,6 +3,63 @@ body {
   padding: 0;
 }
 
+/* HOME */
+
+.home-button {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: none;       /* 배경색 없음 */
+  border: none;
+  cursor: pointer;
+}
+
+.plus-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.plus-icon::before,
+.plus-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform-origin: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.plus-icon::before {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.plus-icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* hover 시 X로 회전 */
+.home-button:hover .plus-icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #000;
+}
+
+.home-button:hover .plus-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #000;
+}
+
+
+
 h1{
   margin: 0;
   font-family: sans-serif;
